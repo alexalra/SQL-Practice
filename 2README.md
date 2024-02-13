@@ -1,1 +1,6 @@
+```ruby
+SELECT *
+FROM Album
+```
+
 
