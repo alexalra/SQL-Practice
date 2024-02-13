@@ -1,8 +1,2 @@
 Let's first count...
 
-```ruby
-SELECT *
-FROM Album
-```
-
-
