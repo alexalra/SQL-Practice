@@ -1,3 +1,23 @@
-Let's first count...
+--Business Question:
 
-Who is the artist taking more 
+-- 1) Who are the top 5 artists whose tracks occupy more bytes in this database? 
+
+SELECT 
+  A.name, 
+  SUM(T.bytes) AS TOTAL_BYTES
+FROM 
+  artist as A
+JOIN 
+  album as AL 
+ON 
+  A.ArtistId=AL.ArtistId
+JOIN 
+  track as T
+ON 
+  T.AlbumID=AL.AlbumID
+GROUP BY 
+  A.name
+ORDER BY 
+  TOTAL_BYTES DESC
+LIMIT
+  5
