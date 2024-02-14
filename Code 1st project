@@ -21,7 +21,4 @@ ORDER BY
   TOTAL_BYTES DESC
 LIMIT
   5
-
-color: rgb( 255,128,64);
-  border-left: 1px hsla(65, 100%, 50%, 1) solid;
-  border-right-color: maroon;
+Olive (SYSTEM)	#808000	rgb(128,128,0)	hsl(60,100%,25%)
