@@ -1,6 +1,0 @@
-```ruby
-SELECT *
-FROM Album
-```
-
-
