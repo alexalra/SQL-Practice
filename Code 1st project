@@ -22,3 +22,33 @@ ORDER BY
 LIMIT
   5
 
+-- 2) Who is the employe who generate more profits?
+
+SELECT 
+  SUM(I.total) TOTAL_SALES, 
+  E.EmployeeId, 
+  E.FirstName, 
+  E.LastName, 
+FROM 
+  Invoice AS I
+JOIN 
+  Customer as C
+ON 
+  C.CustomerId = I.CustomerId
+JOIN 
+  Employee as E
+ON 
+  C.SupportRepId = E.EmployeeId
+GROUP BY 
+  E.EmployeeId
+ORDER 
+  BY TOTAL_SALES DESC
+LIMIT
+  1
+
+-- 3) What is the average duration of the tracks sold by the employee with higher sales?
+
+
+
+
+
