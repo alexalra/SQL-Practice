@@ -28,7 +28,7 @@ SELECT
   SUM(I.total) TOTAL_SALES, 
   E.EmployeeId, 
   E.FirstName, 
-  E.LastName, 
+  E.LastName
 FROM 
   Invoice AS I
 JOIN 
