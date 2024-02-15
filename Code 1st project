@@ -49,6 +49,47 @@ LIMIT
 -- 3) What is the average duration of the tracks sold by the employee with higher sales?
 
 
+WITH TABLE_1 AS (SELECT 
+  SUM(I.total) TOTAL_SALES, 
+  E.EmployeeId, 
+  E.FirstName NAAME, 
+  E.LastName
+FROM 
+  Invoice AS I
+JOIN 
+  Customer as C
+ON 
+  C.CustomerId = I.CustomerId
+JOIN 
+  Employee as E
+ON 
+  C.SupportRepId = E.EmployeeId
+GROUP BY 
+  E.EmployeeId
+ORDER 
+  BY TOTAL_SALES DESC
+LIMIT 
+1
+),
+
+TABLE_2 AS 
+(SELECT T.TrackId, AVG(T.Milliseconds) AVERAGE_DURATION, E.FirstName NAAAME
+FROM TRACK as T
+JOIN InvoiceLine as IL 
+ON T.TrackId = IL.TrackId
+JOIN Invoice as I
+ON IL.InvoiceId = I.InvoiceId
+JOIN Customer as C
+ON C.CustomerId = I.CustomerId
+JOIN Employee as E
+ON C.SupportRepId = E.EmployeeId
+GROUP BY E.FirstName)
+
+
+SELECT  TABLE_1.NAAME, TABLE_2.AVERAGE_DURATION
+FROM TABLE_1
+JOIN TABLE_2
+ON TABLE_1.NAAME = TABLE_2.NAAAME 
 
 
 
