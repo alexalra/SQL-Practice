@@ -95,7 +95,7 @@ ORDER BY
 LIMIT
   5
 
--- 2) Who is the employe who generate more profits?
+-- 2) Who is the employe who generate more sales?
 
 SELECT 
   SUM(I.total) TOTAL_SALES, 
