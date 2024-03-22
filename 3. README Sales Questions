@@ -1,6 +1,23 @@
 Sales Questions for Chinook database. 
 
 - How much money was generated in sales based on the unit price and quantities sold?
+
+<details>
+
+<summary>Tips for collapsed sections</summary>
+
+### You can add a header
+
+You can add text within a collapsed section. 
+
+You can add an image or a code block, too.
+
+```ruby
+   puts "Hello World"
+```
+
+</details>
+
 - Which genre generated most sales?
 - How many genres generated less than 50 in sales?
 - Who are the top 5 artists whose tracks occupy more bytes in this database?
