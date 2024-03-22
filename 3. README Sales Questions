@@ -1,1 +1,9 @@
+Sales Questions for Chinook database. 
+
+- How much money was generated in sales based on the unit price and quantities sold?
+- Which genre generated most sales?
+- How many genres generated less than 50 in sales?
+- Who are the top 5 artists whose tracks occupy more bytes in this database?
+- Who is the employe who generate more sales?
+- What is the average duration of the tracks sold by the employee with higher sales?
 
