@@ -1,1 +1,20 @@
+Let's create a table with table from the company's other partner stores, namely other digital media stores operating in the same field and with whom our company cooperates.
+
+<details>
+
+  <summary>Description</summary>
+  
+
+```
+XXXXX
+```
+Code
+
+```ruby
+WITH TABLE_1 AS 
+
+  (SELECT 
+
+```
+</details>
 
