@@ -1,6 +1,6 @@
 This is the project number 1 of my SQL portfolio. 
 
-Dated in April 2024
+Dated in April 2024.
 
 Refer to the first file [1. Project introduction](https://github.com/alexalra/SQL-Practice/edit/main/1.%20Project%20introduction.md) to learn more about it. 
 
